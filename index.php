@@ -14,6 +14,7 @@
 
     <div>
         <ul>
+            
             <li v-for="(elem,index) in data" :key="index" @click="mostraSingoloElem(index)">
                 <span @click="aggiornoElem( index )" :class=" (elem.done) ? 'text-decoration-line-through' : '' ">
                     {{ elem.text }}
